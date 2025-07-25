@@ -33,6 +33,8 @@
               <a href="/" class="rounded-md px-3 py-2 text-sm font-medium {{ request()->is('/') ? $current : $default}}" aria-current="page">Dashboard</a>
               <a href="/about" class="rounded-md px-3 py-2 text-sm font-medium {{ request()->is('about') ? $current : $default}}">About</a>
               <a href="/contact" class="rounded-md px-3 py-2 text-sm font-medium {{ request()->is('contact') ? $current : $default}}">Contact</a>
+              <a href="/blog" class="rounded-md px-3 py-2 text-sm font-medium {{ request()->is('blog') ? $current : $default}}">Blog</a>
+              <a href="/blog/create" class="rounded-md px-3 py-2 text-sm font-medium {{ request()->is('blog/create') ? $current : $default}}">Create New</a>
             </div>
           </div>
         </div>

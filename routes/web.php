@@ -15,6 +15,6 @@ Route::get('/contact', ContactController::class);
 
 Route::get('/jop', [JopController::class, 'index']);
 
-Route::resource('blog', PostController::class)->only(['show']);
-Route::resource('comments', CommentController::class);`
+Route::resource('blog', PostController::class);
+Route::resource('comments', CommentController::class);
 Route::resource('tags', TagController::class);
